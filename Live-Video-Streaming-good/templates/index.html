@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+  </head>
+  <body>
+    <img src="{{ url_for('video_feed') }}">
+
+
+
+<form name="passdata" action="." method="post">
+<br>
+<br>
+<legend>
+<p><i><b>Options</b></i></p>
+<input type="radio" name="psw1" value='0' id="savestream" required></input>
+<label for="savestream"><i>Watching Saved Stream.</i></label><br>
+<input type="radio" name="psw1" value='2' id="usb_cam_stream" required></input>
+<label for="usb_cam_stream"><i>USB CAMERA Live Stream</i></label><br>
+
+
+  <input type=radio name="psw1" value='3' id="startvideo" required></input>
+<label for="startvideo"><i>PLAY Video No1 Stream</i></label><br>
+
+    <input type=radio name="psw1" value='4' id="startvideo1" required></input>
+<label for="startvideo1"><i>PLAY Video No2 Stream</i></label><br>
+
+  <input type=radio name="psw1" value='1' id="closestream" required></input>
+<label for="closestream"><i>Close Stream</i></label><br>
+
+<button type="Submit">Submit</button>
+</legend>
+</form>
+  </body>
+</html>
+
